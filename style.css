@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #11212a;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #dbf3ff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    font-family: Momo Trust Display;
+    color: #152b37;
+}
+header a{
+    font-family: dm sans;
+    font-weight: 600;
+    color: #152b37;
+    text-decoration: none;
+    position: relative;
+}
+header a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #152b37;
+    transition: width 400ms ease-in-out;
+}
+header a:hover::after{
+    width: 100%;
+}
+
+/* --------------------PÁGINA INICIAL---------------------- */
+/* ========IMAGENS======== */
+section#inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+section a{
+    margin-bottom: 60px;
+}
+section .imagem{
+    width: 80vw;
+    min-height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+}
+
+section .imagem p {
+    height: fit-content;
+}
+
+.img1 {
+    background-image: url("img/raio-X-radiografia.jpg");
+    background-position: center;
+}
+.img2 {
+    background-image: url("img/preto-e-branco-raiox.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section .imagem p{
+    text-align: center;
+    color: #dbf3ff;
+    font-family: Saira;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #11212ac7;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+
+/* --------------------DESCOBERTA---------------------- */
+/* ========PÁGINA======== */
+section#descoberta{
+    margin-top: 4rem;
+    padding: 0 5rem 4rem;
+}
+section#descoberta h2{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.descoberta p{
+    color: #fff;
+    font-family: dm sans;
+    font-size: 18px;
+    margin: 0 70px;
+}
+
+/* ========IMAGEM======== */
+.centraliza{
+    display: flex;
+    justify-content: center;
+}
+.descoberta .imagem-desc{
+    width: 80vw;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.descoberta .imagem-desc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* --------------------CIENTISTA---------------------- */
+/* ========PÁGINA======== */
+section#cientista{
+    margin: 4rem 0;
+    padding: 0 5rem 4rem;
+}
+section#cientista h2{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.cientista p{
+    color: #fff;
+    font-family: dm sans;
+    font-size: 18px;
+    margin: 0 70px;
+}
+
+/* ========IMAGEM======== */
+.centraliza{
+    display: flex;
+    justify-content: center;
+}
+.cientista .imagem-cie{
+    width: 80vw;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.cientista .imagem-cie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* --------------------CARACTERISTICAS---------------------- */
+/* ========PÁGINA======== */
+section#carac{
+    margin-top: 4rem;
+    padding: 0 5rem 4rem;
+}
+section#carac h2{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.centraliza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caracte{
+    background-color: #dbf3ff5a;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70vw;
+    border-left: 4px solid #fff;
+    transition: transform 300ms ease-in-out;
+}
+.caracte:hover{
+    transform: translateX(-10px);
+}
+.caracte h3{
+    font-family: saira;
+    color: #dbf3ff;
+    font-size: 25px;
+}
+.caracte p{
+    font-family: dm sans;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 40px;
+}
+
+/* --------------------APLICAÇÕES---------------------- */
+/* ========PÁGINA======== */
+section#aplicacoes{
+    margin: 4rem 0;
+    padding: 0 5rem 4rem;
+}
+section#aplicacoes h2{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+section#aplicacoes h3{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+section#aplicacoes h4{
+    color: #dbf3ff;
+    font-family: Momo Trust Display;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+section#aplicacoes ul{
+    color: #fff;
+}
+.aplicacoes p{
+    color: #fff;
+    font-family: dm sans;
+    font-size: 18px;
+    margin: 0 70px;
+}
+
+/* ========IMAGEM======== */
+.centraliza{
+    display: flex;
+    justify-content: center;
+}
+.aplicacoes .imagem-apl{
+    width: 80vw;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+.aplicacoes .imagem-apl img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}

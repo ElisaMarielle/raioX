@@ -1,1 +1,0 @@
-# F-sica-raio-X-
