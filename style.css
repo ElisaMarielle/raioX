@@ -63,6 +63,11 @@ section .imagem{
     align-items: center;
     justify-content: center;
     background-size: 100% 100%;
+    transition: box-shadow 300ms ease-in-out, transform 300ms ease-in;
+}
+section .imagem:hover{
+    box-shadow: 0 0 15px #dbf3ffcd;
+    transform: translateY(-10px);
 }
 
 section .imagem p {
