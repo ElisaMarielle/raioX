@@ -235,11 +235,13 @@ section#aplicacoes h4{
     font-family: Momo Trust Display;
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-top: 40px;
+    
 }
 section#aplicacoes ul{
     color: #fff;
+    margin-left: 60px;
 }
 .aplicacoes p{
     color: #fff;
